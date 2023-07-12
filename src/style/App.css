@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App{
+}
+
+a{
+    color: black;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.container{
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 0;
+}
+
+.userPageBody{
+    display: flex;
+}
+
+.info{
+    margin-left: 20px;
+}
+
+.MainPage{
+    display: flex;
+    justify-content: space-between;
+}
+
+.userList{
+    width: 60%;
+}

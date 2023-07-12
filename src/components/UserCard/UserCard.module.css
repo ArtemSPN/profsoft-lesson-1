@@ -1,0 +1,26 @@
+.userCard{
+    width: 100%;
+    background-color: rgb(201, 201, 201);
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+.link{
+    margin-right: 10px;
+
+}
+
+.btns{
+    float: right;
+}
+
+.body{
+    width: 100%;
+    display: flex;
+}
+
+.info{
+    margin-left: 10px;
+    padding: 10px;
+}
