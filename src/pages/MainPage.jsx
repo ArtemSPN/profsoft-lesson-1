@@ -1,10 +1,12 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import UserCard from '../components/UserCard/UserCard'
 import AddNewUser from '../components/AddNewUser/AddNewUser'
+import { UserContext } from '../context/userContext'
 
 const MainPage = () => {
-    const [users, setUsers] = useState([])
+    const {users, setUsers} = useContext(UserContext)
+    
 
     const delUser = (id) => {
         setUsers(users.filter(user => user.id !== id))
@@ -33,7 +35,7 @@ const MainPage = () => {
                         })
                     }
                 </div>
-                <AddNewUser func={addUser}/>
+                <AddNewUser title={'добавить'} func={addUser}/>
            </div>
         </div>
     )
